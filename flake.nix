@@ -51,6 +51,9 @@
             # Required by rust-analyzer
             RUST_SRC_PATH = "${pkgs.rustToolchain}/lib/rustlib/src/rust/library";
           };
+          shellHook = ''
+            exec zsh
+          '';
         };
       });
     };
